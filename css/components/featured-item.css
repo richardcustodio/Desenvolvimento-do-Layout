@@ -1,0 +1,126 @@
+/* Estilos específicos para a seção de destaque */
+.featured-item {
+  background-color: #f9f9f9;
+  padding: 50px 0;
+}
+
+.featured-item .container {
+  align-items: flex-start;
+}
+
+.featured-item .featured-image {
+  flex-basis: 40%;
+}
+
+.featured-item .featured-image img {
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.featured-item .featured-image img:hover {
+  transform: scale(1.05);
+}
+
+.featured-item .featured-content {
+  flex-basis: 55%;
+}
+
+.featured-item .featured-content h2 {
+  font-size: 2.2em;
+  color: #222;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.featured-item .featured-content p {
+  font-size: 1em;
+  line-height: 1.8;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+/* Responsividade Detalhada */
+@media (min-width: 1200px) {
+  .featured-item .featured-content h2 {
+    font-size: 2.6em;
+  }
+
+  .featured-item .featured-content p {
+    font-size: 1.1em;
+  }
+
+  .featured-item {
+    padding: 70px 0;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .featured-item .featured-image {
+    flex-basis: 45%;
+  }
+
+  .featured-item .featured-content {
+    flex-basis: 50%;
+  }
+
+  .featured-item .featured-content h2 {
+    font-size: 2em;
+  }
+
+  .featured-item .featured-content p {
+    font-size: 0.95em;
+  }
+
+  .featured-item {
+    padding: 40px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .featured-item .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .featured-item .featured-image,
+  .featured-item .featured-content {
+    flex-basis: 100%;
+  }
+
+  .featured-item .featured-image img {
+    width: 100%;
+  }
+
+  .featured-item .featured-content h2 {
+    font-size: 1.8em;
+    text-align: center;
+  }
+
+  .featured-item .featured-content p {
+    font-size: 0.9em;
+  }
+
+  .featured-item {
+    padding: 30px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .featured-item .featured-content h2 {
+    font-size: 1.6em;
+  }
+
+  .featured-item .featured-content p {
+    font-size: 0.85em;
+  }
+}
+
+/* Animações */
+.featured-item .featured-image img {
+  transition: transform 0.3s ease-in-out;
+}
+
+.featured-item .featured-image img:hover {
+  transform: scale(1.05);
+}

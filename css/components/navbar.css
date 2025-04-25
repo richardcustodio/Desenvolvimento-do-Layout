@@ -1,0 +1,261 @@
+/* Estilos Gerais */
+.main-navigation {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  overflow: visible !important;
+  height: auto !important;
+  max-height: none !important;
+  position: relative;
+  box-sizing: border-box;
+  padding-bottom: 20px;
+}
+
+.main-navigation .container {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: visible !important;
+  height: auto !important;
+  max-height: none !important;
+  box-sizing: border-box;
+}
+
+.main-navigation .menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: flex-start;
+  overflow-x: auto;
+}
+
+.main-navigation .menu li {
+  position: relative;
+  margin-right: 0;
+  display: block;
+}
+
+.main-navigation .menu li:last-child {
+  margin-right: 0;
+}
+
+.main-navigation .menu li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 15px;
+  font-size: 1em;
+  display: block;
+  align-items: center;
+  transition: color 0.3s ease, background-color 0.3s ease;
+  border-bottom: 1px solid #555;
+}
+
+.main-navigation .menu li a:hover {
+  background-color: #555;
+  color: #f0f0f0;
+}
+
+.main-navigation .menu li a.all-categories {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin-bottom: 10px;
+}
+
+.main-navigation .menu li a.all-categories:hover {
+  background-color: #0056b3;
+  transform: scale(1.01);
+  cursor: pointer;
+}
+
+.main-navigation .menu li a.all-categories i {
+  margin-right: 8px;
+  font-size: 1.2em;
+  vertical-align: middle;
+}
+
+/* Estilos para Submenu (Desktop - Aberto por padrão) */
+.main-navigation .menu li .submenu {
+  display: block;
+  position: static;
+  top: auto;
+  left: auto;
+  background-color: #444;
+  color: #fff;
+  list-style: none;
+  padding: 10px 0;
+  margin-top: 0;
+  width: 100%;
+  box-shadow: none;
+  z-index: auto;
+  border-radius: 0;
+}
+
+.main-navigation .menu li .submenu li a {
+  padding: 10px 25px;
+  display: block;
+  border-bottom: 1px solid #555;
+  text-align: left;
+  transition: background-color 0.3s ease;
+}
+
+.main-navigation .menu li .submenu li:last-child a {
+  border-bottom: none;
+}
+
+.main-navigation .menu li .submenu li a:hover {
+  background-color: #555;
+}
+
+.main-navigation .menu li a .submenu-indicator {
+  display: none;
+}
+
+/* Estilos para Mobile (resoluções até 768px) */
+@media (max-width: 768px) {
+  .main-navigation {
+      background-color: #333;
+      color: #fff;
+      padding: 10px 0;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      position: sticky; 
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 100;
+  }
+
+  .main-navigation .container {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 10px 15px;
+  }
+
+  .main-navigation .menu {
+      display: none; 
+      flex-direction: column;
+      width: 100%;
+      background-color: #333;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .main-navigation .menu.open {
+      display: flex; /* Exibe o menu quando a classe 'open' é adicionada */
+  }
+
+  .main-navigation .menu li {
+      display: block;
+      margin-right: 0;
+      position: relative;
+  }
+
+  .main-navigation .menu li a {
+      padding: 15px 20px;
+      border-bottom: 1px solid #444;
+      justify-content: space-between;
+      align-items: center;
+  }
+
+  .mobile-only {
+      display: block;
+      width: 100%;
+      margin-bottom: 0; 
+  }
+
+  .desktop-only {
+      display: none;
+  }
+
+  .main-navigation .menu li .submenu {
+      position: static;
+      width: 100%;
+      box-shadow: none;
+      display: none; 
+      margin-top: 0;
+      border-radius: 0;
+      padding: 0;
+  }
+
+  .main-navigation .menu li.open-submenu > .submenu {
+      display: block; /* Exibe o submenu quando a classe 'open-submenu' está presente */
+  }
+
+  .main-navigation .menu li .submenu li a {
+      padding-left: 30px;
+      border-bottom: 1px solid #555;
+  }
+
+  .main-navigation .menu li a .submenu-indicator {
+      display: block;
+      margin-left: 10px;
+  }
+
+  .mobile-only a.all-categories {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      padding: 12px 15px;
+      border-radius: 5px;
+      background-color: #007bff;
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      margin-bottom: 10px; /* Adiciona espaço abaixo do botão */
+  }
+
+  .mobile-only a.all-categories i {
+      margin-right: 10px;
+      font-size: 1.1em;
+  }
+
+  .main-navigation .menu li.open-submenu > a .submenu-indicator {
+      transform: rotate(180deg);
+      transition: transform 0.3s ease-in-out;
+  }
+
+  /* Oculta os itens principais do menu inicialmente */
+  .main-navigation .menu li:not(.mobile-only) {
+      display: none;
+  }
+
+  /* Exibe os itens do menu (exceto o botão "Todas as Categorias") quando a classe "open" está no menu */
+  .main-navigation .menu.open li:not(.mobile-only) {
+      display: block;
+  }
+}
+
+/* Estilos específicos para Smartphones Menores (até 480px) */
+@media (max-width: 480px) {
+  .main-navigation .menu li a {
+    padding: 12px 15px;
+    font-size: 0.9em;
+  }
+
+  .mobile-only a.all-categories {
+    font-size: 0.95em;
+    padding: 10px 12px;
+  }
+
+  .main-navigation .container {
+    padding: 10px;
+  }
+}
+
+/* 

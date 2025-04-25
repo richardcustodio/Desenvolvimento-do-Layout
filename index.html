@@ -1,0 +1,634 @@
+<!-- Irei enviar o codigo de cada arquivo para que possa busca melhorias e adiciona uma resposividade -->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AVANTI - Sua Loja de Roupas Online</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="container">
+        <div class="logo">
+          <a href="/">
+            <img
+              src="assets/img/logo/LogoAvanti-removebg-preview.png"
+              alt="Logo AVANTI"
+            />
+          </a>
+        </div>
+        <div class="search-bar">
+          <input
+            type="text"
+            placeholder="Digite o tipo de roupa, marca, etc."
+            class="search-input"
+            id="search-input"
+          />
+          <button id="search-button" class="search-button">
+            <i class="fa-solid fa-search"></i>
+          </button>
+        </div>
+        <div class="user-actions">
+          <a href="#" class="user-link">
+            <i class="fa-solid fa-user"></i> Minha Conta
+          </a>
+          <a href="#" class="wishlist-link">
+            <i class="fa-regular fa-heart"></i> Lista de Desejos
+          </a>
+          <a href="#" class="cart-link">
+            <i class="fa-solid fa-cart-shopping"></i> Meu Carrinho
+            <span>9</span>
+          </a>
+        </div>
+      </div>
+      <div id="search-message-container" class="search-message-container"></div>
+    </header>
+
+    <nav class="main-navigation">
+      <div class="container">
+        <ul class="menu">
+          <li class="mobile-only">
+            <a href="#" class="all-categories categories-toggle">
+              <i class="fa-solid fa-list-ul"></i> Todas as Categorias
+            </a>
+          </li>
+          <li class="desktop-only has-submenu">
+            <a href="#"
+              >Feminino
+              <i class="fa-solid fa-chevron-down submenu-indicator"></i
+            ></a>
+            <ul class="submenu">
+              <li><a href="#">Blusas</a></li>
+              <li><a href="#">Vestidos</a></li>
+              <li><a href="#">Calças</a></li>
+              <li><a href="#">Saias</a></li>
+              <li><a href="#">Casacos</a></li>
+            </ul>
+          </li>
+          <li class="desktop-only has-submenu">
+            <a href="#"
+              >Masculino
+              <i class="fa-solid fa-chevron-down submenu-indicator"></i
+            ></a>
+            <ul class="submenu">
+              <li><a href="#">Camisetas</a></li>
+              <li><a href="#">Camisas</a></li>
+              <li><a href="#">Calças</a></li>
+              <li><a href="#">Bermudas</a></li>
+              <li><a href="#">Jaquetas</a></li>
+            </ul>
+          </li>
+          <li class="desktop-only has-submenu">
+            <a href="#"
+              >Infantil
+              <i class="fa-solid fa-chevron-down submenu-indicator"></i
+            ></a>
+            <ul class="submenu">
+              <li><a href="#">Para Meninas</a></li>
+              <li><a href="#">Para Meninos</a></li>
+              <li><a href="#">Para Bebês</a></li>
+              <li><a href="#">Calçados</a></li>
+            </ul>
+          </li>
+          <li class="desktop-only"><a href="#">Acessórios</a></li>
+          <li class="desktop-only"><a href="#">Promoções</a></li>
+          <li class="desktop-only"><a href="#">Novidades</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main>
+      <section class="hero-banner">
+        <div class="container">
+          <img
+            src="assets/img/banners/BannerSale.png"
+            alt="Nova Coleção de Outono | Até 30% OFF"
+          />
+        </div>
+      </section>
+
+      <section class="releases">
+        <div class="container">
+          <h2>Novidades</h2>
+          <div class="carousel-container">
+            <div class="carousel">
+              <div class="product-card">
+                <img
+                  src="assets/img/products/lancamentos/BlusaDeTricôConfortável.jpg"
+                  alt="Blusa de Tricô"
+                />
+                <div class="product-info">
+                  <h3 class="product-name">Blusa de Tricô Confortável</h3>
+                  <p class="product-description">
+                    Ideal para os dias frios. Tecido macio e quente.
+                  </p>
+                  <div class="price">
+                    <span class="old-price">R$ 129,90</span>
+                    <span class="current-price">R$ 99,90</span>
+                    <span class="installments">3x de R$ 33,30</span>
+                  </div>
+                  <button class="buy-button">Comprar</button>
+                </div>
+              </div>
+              <div class="product-card">
+                <img
+                  src="assets/img/products/lancamentos/CalçaJeansSkinny.jpg"
+                  alt="Calça Jeans Skinny"
+                />
+                <div class="product-info">
+                  <h3 class="product-name">Calça Jeans Skinny Premium</h3>
+                  <p class="product-description">
+                    Modelagem moderna e confortável. Diversas cores.
+                  </p>
+                  <div class="price">
+                    <span class="old-price">R$ 159,90</span>
+                    <span class="current-price">R$ 139,90</span>
+                    <span class="installments">4x de R$ 34,98</span>
+                  </div>
+                  <button class="buy-button">Comprar</button>
+                </div>
+              </div>
+              <div class="product-card">
+                <img
+                  src="assets/img/products/lancamentos/VestidoFloralPrimavera.jpg"
+                  alt="Vestido Floral Leve"
+                />
+                <div class="product-info">
+                  <h3 class="product-name">Vestido Floral Primavera</h3>
+                  <p class="product-description">
+                    Estampa exclusiva. Tecido leve e fresco.
+                  </p>
+                  <div class="price">
+                    <span class="old-price">R$ 119,90</span>
+                    <span class="current-price">R$ 89,90</span>
+                    <span class="installments">2x de R$ 44,95</span>
+                  </div>
+                  <button class="buy-button">Comprar</button>
+                </div>
+              </div>
+              <div class="product-card">
+                <img
+                  src="assets/img/products/lancamentos/CamisetaBásicaAlgodãoPenteado.jpg"
+                  alt="Camiseta Básica Algodão"
+                />
+                <div class="product-info">
+                  <h3 class="product-name">Camiseta Básica Algodão</h3>
+                  <p class="product-description">
+                    Conforto para o dia a dia. Várias cores e tamanhos.
+                  </p>
+                  <div class="price">
+                    <span class="old-price">R$ 49,90</span>
+                    <span class="current-price">R$ 39,90</span>
+                    <span class="installments">À vista R$ 39,90</span>
+                  </div>
+                  <button class="buy-button">Comprar</button>
+                </div>
+              </div>
+              <div class="product-card">
+                <img
+                  src="assets/img/products/lancamentos/CasacoDeLãBatidaPremium.jpg"
+                  alt="Casaco de Inverno Elegante"
+                />
+                <div class="product-info">
+                  <h3 class="product-name">Casaco de Lã Batida Premium</h3>
+                  <p class="product-description">
+                    Elegância e proteção contra o frio. Design moderno.
+                  </p>
+                  <div class="price">
+                    <span class="old-price">R$ 249,90</span>
+                    <span class="current-price">R$ 199,90</span>
+                    <span class="installments">6x de R$ 33,32</span>
+                  </div>
+                  <button class="buy-button">Comprar</button>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control prev-button">
+              <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <button class="carousel-control next-button">
+              <i class="fa-solid fa-chevron-right"></i>
+            </button>
+          </div>
+          <div class="carousel-indicators"></div>
+          <a href="#" class="view-more-link">Ver mais novidades</a>
+        </div>
+      </section>
+
+      <section class="featured-item">
+        <div class="container">
+          <div class="featured-image">
+            <img
+              src="assets/img/products/destaque/JaquetaDeCouroEcológico.jpg"
+              alt="Jaqueta de Couro Exclusiva"
+            />
+          </div>
+          <div class="featured-content">
+            <h2>Jaqueta de Couro Ecológico - Edição Limitada</h2>
+            <p>
+              Sofisticação e estilo em uma peça única. Couro ecológico de alta
+              qualidade, design moderno com detalhes exclusivos. Ideal para
+              compor looks incríveis em qualquer ocasião.
+            </p>
+            <p>
+              Disponível em tamanhos P, M e G. Aproveite nossa promoção especial
+              de lançamento e adicione um toque de elegância ao seu
+              guarda-roupa!
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="info-blocks">
+        <div class="container">
+          <div class="info-block">
+            <i class="fa-solid fa-truck fa-2x"></i>
+            <h3>Frete Grátis Acima de R$150</h3>
+            <p>
+              Receba seus produtos no conforto da sua casa com frete grátis para
+              compras acima de R$150. Consulte as condições.
+            </p>
+          </div>
+          <div class="info-block">
+            <i class="fa-solid fa-exchange-alt fa-2x"></i>
+            <h3>Troca Fácil em Até 30 Dias</h3>
+            <p>
+              Não se preocupe se a peça não servir! Oferecemos troca fácil em
+              até 30 dias após o recebimento.
+            </p>
+          </div>
+          <div class="info-block">
+            <i class="fa-solid fa-headset fa-2x"></i>
+            <h3>Atendimento Personalizado</h3>
+            <p>
+              Nossa equipe está pronta para te ajudar com qualquer dúvida ou
+              sugestão. Entre em contato por telefone, e-mail ou chat.
+            </p>
+          </div>
+          <div class="info-block featured-image-info">
+            <img
+              src="assets/img/products/info-section/Loja.png"
+              alt="Look da Estação em Destaque"
+              class="featured-image-large"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="featured-collections">
+        <div class="container">
+          <h2>Coleções em Destaque</h2>
+          <div class="collection-grid">
+            <div class="collection-card">
+              <img
+                src="assets/img/products/collections/colecao-primavera.png"
+                alt="Coleção Primavera"
+              />
+              <div class="collection-info">
+                <h3>Primavera Florescente</h3>
+                <p>Cores vibrantes e estampas florais para a nova estação.</p>
+                <a href="#" class="view-collection-button">Ver Coleção</a>
+              </div>
+            </div>
+            <div class="collection-card">
+              <img
+                src="assets/img/products/collections/colecao-verao.png"
+                alt="Coleção Verão"
+              />
+              <div class="collection-info">
+                <h3>Verão Solar</h3>
+                <p>
+                  Peças leves, frescas e cheias de estilo para os dias de sol.
+                </p>
+                <a href="#" class="view-collection-button">Ver Coleção</a>
+              </div>
+            </div>
+            <div class="collection-card">
+              <img
+                src="assets/img/products/collections/colecao-outono.png"
+                alt="Coleção Outono"
+              />
+              <div class="collection-info">
+                <h3>Outono Aconchegante</h3>
+                <p>
+                  Tons terrosos, texturas suaves e peças confortáveis para o
+                  outono.
+                </p>
+                <a href="#" class="view-collection-button">Ver Coleção</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="customer-reviews">
+        <div class="container">
+          <h2>O que nossos clientes dizem</h2>
+          <div class="reviews-grid">
+            <div class="review-card">
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p class="review-text">
+                "Adorei a blusa que comprei! O tecido é super macio e o caimento
+                perfeito. Entrega rápida e ótimo atendimento. Recomendo!"
+              </p>
+              <p class="reviewer">- Ana Silva</p>
+            </div>
+            <div class="review-card">
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <p class="review-text">
+                "A calça jeans tem uma qualidade incrível e veste muito bem.
+                Fiquei muito satisfeito com a compra."
+              </p>
+              <p class="reviewer">- Carlos Pereira</p>
+            </div>
+            <div class="review-card">
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+              </div>
+              <p class="review-text">
+                "O vestido é lindo! Exatamente como na foto. Só achei que o
+                tamanho ficou um pouco justo, mas no geral, amei."
+              </p>
+              <p class="reviewer">- Mariana Oliveira</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="faq-section">
+        <div class="container">
+          <h2>Perguntas Frequentes</h2>
+          <div class="faq-grid">
+            <div class="faq-item">
+              <button class="faq-question">
+                Qual o prazo de entrega dos produtos?
+                <i class="fa-solid fa-plus"></i>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  O prazo de entrega varia de acordo com a sua região e o tipo
+                  de frete selecionado. Geralmente, as entregas ocorrem entre 3
+                  a 10 dias úteis após a confirmação do pagamento.
+                </p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-question">
+                Como funciona a política de trocas e devoluções?
+                <i class="fa-solid fa-plus"></i>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Aceitamos trocas e devoluções em até 30 dias após o
+                  recebimento do produto, desde que esteja em perfeitas
+                  condições e com a etiqueta original. Consulte nossa página de
+                  "Trocas e Devoluções" para mais detalhes.
+                </p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-question">
+                Quais as formas de pagamento aceitas?
+                <i class="fa-solid fa-plus"></i>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Aceitamos cartões de crédito (Visa, Mastercard, American
+                  Express), boleto bancário e Pix.
+                </p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-question">
+                Os produtos têm garantia?
+                <i class="fa-solid fa-plus"></i>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Sim, todos os nossos produtos possuem garantia contra defeitos
+                  de fabricação de 90 dias a partir da data de recebimento.
+                </p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-question">
+                Como posso entrar em contato com o atendimento ao cliente?
+                <i class="fa-solid fa-plus"></i>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Você pode entrar em contato conosco através do nosso telefone
+                  +55 (XX) XXXX-XXXX, pelo e-mail contato@avanti.com.br ou pelo
+                  chat online disponível em nosso site durante o horário
+                  comercial.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="newsletter-section">
+        <div class="container">
+          <div class="newsletter-content">
+            <h2>Fique por dentro da moda!</h2>
+            <p class="newsletter-benefit">
+              <i class="fa-solid fa-tag"></i> Receba ofertas exclusivas e
+              descontos especiais.
+            </p>
+            <p class="newsletter-benefit">
+              <i class="fa-solid fa-bell"></i> Seja o primeiro a saber sobre
+              nossos lançamentos.
+            </p>
+            <p class="newsletter-benefit">
+              <i class="fa-solid fa-heart"></i> Dicas de estilo e tendências
+              diretamente no seu e-mail.
+            </p>
+            <form class="newsletter-form">
+              <input type="text" placeholder="Digite seu nome" />
+              <input type="email" placeholder="Digite seu e-mail" />
+              <button type="submit">
+                <i class="fa-solid fa-envelope"></i> Quero Receber!
+              </button>
+            </form>
+            <p class="newsletter-privacy">
+              Seus dados estão seguros conosco.
+              <a href="#">Política de Privacidade</a>
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="main-footer">
+      <div class="container">
+        <div class="footer-links">
+          <div class="footer-logo-social">
+            <h3>AVANTI</h3>
+            <div class="social-links">
+              <a href="#" class="social-icon"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="#" class="social-icon"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a href="#" class="social-icon"
+                ><i class="fa-brands fa-pinterest"></i
+              ></a>
+              <a href="#" class="social-icon"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+            </div>
+          </div>
+          <div class="institucional">
+            <h4>Institucional</h4>
+            <ul>
+              <li><a href="#">Sobre a Avanti</a></li>
+              <li><a href="#">Nossas Marcas</a></li>
+              <li><a href="#">Política de Privacidade</a></li>
+              <li><a href="#">Termos de Uso</a></li>
+            </ul>
+          </div>
+          <div class="central-de-ajuda">
+            <h4>Central de Ajuda</h4>
+            <ul>
+              <li><a href="#">Contato</a></li>
+              <li><a href="#">Envio e Entrega</a></li>
+              <li><a href="#">Trocas e Devoluções</a></li>
+              <li><a href="#">Formas de Pagamento</a></li>
+              <li><a href="#">Perguntas Frequentes</a></li>
+            </ul>
+          </div>
+          <div class="atendimento">
+            <h4>Atendimento</h4>
+            <p>Tel: (00) 1234-5678</p>
+            <p>Email: contato@avantimoda.com.br</p>
+            <p>Horário:</p>
+            <p>Seg a Sex: 9h às 18h</p>
+          </div>
+        </div>
+        <div class="payment-methods">
+          <div class="payment-icon">
+            <img src="assets/img/footer/icons8-amex-48.png" alt="Amex" />
+            <a href="https://www.americanexpress.com/" target="_blank">Amex</a>
+          </div>
+          <div class="payment-icon">
+            <img src="assets/img/footer/icons8-visa-48.png" alt="Visa" />
+            <a href="https://www.visa.com.br/" target="_blank">Visa</a>
+          </div>
+          <div class="payment-icon">
+            <img
+              src="assets/img/footer/icons8-mastercard-48.png"
+              alt="Mastercard"
+            />
+            <a href="https://www.mastercard.com.br/pt-br.html" target="_blank"
+              >Mastercard</a
+            >
+          </div>
+          <div class="payment-icon">
+            <img src="assets/img/footer/icons8-paypal-48.png" alt="PayPal" />
+            <a href="https://www.paypal.com/br/home" target="_blank">PayPal</a>
+          </div>
+          <div class="payment-icon">
+            <img src="assets/img/footer/icons8-foto-48.png" alt="Pix" />
+            <a
+              href="https://www.bcb.gov.br/estabilidadefinanceira/pix"
+              target="_blank"
+              >Pix</a
+            >
+          </div>
+          <div class="payment-icons-credits">
+            <p>
+              Ícones de pagamento por
+              <a href="https://icons8.com" target="_blank">Icons8</a>
+            </p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p class="footer-text">
+            Avanti Moda: Sua loja de roupas online com as últimas tendências e
+            estilo único. Compre com segurança e receba no conforto da sua casa.
+          </p>
+          <div class="security-logos">
+            <div class="security-icons">
+              <div class="security-icon">
+                <img
+                  src="assets/img/footer/icons8-lock-94.png"
+                  alt="Segurança"
+                />
+                <a
+                  href="https://icons8.com/icon/8cWmD9lajgRn/lock"
+                  target="_blank"
+                  >Segurança</a
+                >
+              </div>
+              <div class="security-icon">
+                <img
+                  src="assets/img/footer/icons8-pagamento-seguro-48.png"
+                  alt="Pagamento Seguro"
+                />
+                <a
+                  href="https://icons8.com/icon/9BO8KPzyjld9/card-security"
+                  target="_blank"
+                  >Pagamento Seguro</a
+                >
+              </div>
+              <div class="security-icon">
+                <img
+                  src="assets/img/logo/LogoAvanti-removebg-preview-small.png"
+                  alt="Logo Avanti Pequeno"
+                />
+                <span>Avanti</span>
+              </div>
+              <div class="security-icon">
+                <img
+                  src="assets/img/footer/icons8-selo-de-confiança-48.png"
+                  alt="Selo de Confiança"
+                />
+                <a
+                  href="https://icons8.com/icon/103936/guarantee"
+                  target="_blank"
+                  >Confiança</a
+                >
+              </div>
+            </div>
+            <p class="icons-credits">
+              Ícones por <a href="https://icons8.com" target="_blank">Icons8</a>
+            </p>
+          </div>
+          <div class="copyright">
+            <p>&copy; 2025 Avanti Moda - Todos os direitos reservados.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/components/search.js"></script>
+    <script src="js/components/navbar.js"></script>
+  </body>
+</html>

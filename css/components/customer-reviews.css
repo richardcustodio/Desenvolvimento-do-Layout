@@ -1,0 +1,140 @@
+/* Estilos para a seção de Avaliações de Clientes */
+.customer-reviews {
+  padding: 50px 0;
+  background-color: #fff;
+  text-align: center;
+}
+
+.customer-reviews .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.customer-reviews h2 {
+  color: #333;
+  margin-bottom: 30px;
+  font-size: 1.8em;
+}
+
+.customer-reviews .reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.customer-reviews .review-card {
+  background-color: #f9f9f9;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  text-align: left;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.customer-reviews .review-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.customer-reviews .rating {
+  color: #ffc107;
+  font-size: 1.2em;
+  margin-bottom: 15px;
+}
+
+.customer-reviews .rating i {
+  margin-right: 5px;
+}
+
+.customer-reviews .review-text {
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  font-size: 1em;
+}
+
+.customer-reviews .reviewer {
+  color: #777;
+  font-style: italic;
+  text-align: right;
+  font-size: 0.9em;
+}
+
+/* Responsividade Detalhada */
+@media (min-width: 1200px) {
+  .customer-reviews h2 {
+    font-size: 2em;
+  }
+
+  .customer-reviews .reviews-grid {
+    gap: 40px;
+  }
+
+  .customer-reviews .review-card {
+    padding: 40px;
+  }
+
+  .customer-reviews .review-text {
+    font-size: 1.1em;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .customer-reviews .reviews-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .customer-reviews .review-card {
+    padding: 25px;
+  }
+
+  .customer-reviews h2 {
+    font-size: 1.6em;
+  }
+}
+
+@media (max-width: 768px) {
+  .customer-reviews h2 {
+    font-size: 1.5em;
+  }
+
+  .customer-reviews .reviews-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .customer-reviews .review-card {
+    padding: 20px;
+  }
+
+  .customer-reviews .review-text {
+    font-size: 0.95em;
+  }
+}
+
+@media (max-width: 480px) {
+  .customer-reviews h2 {
+    font-size: 1.4em;
+  }
+
+  .customer-reviews .review-text {
+    font-size: 0.9em;
+  }
+
+  .customer-reviews .review-card {
+    padding: 15px;
+  }
+}
+
+/* Animações */
+.customer-reviews .review-card {
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.customer-reviews .review-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}

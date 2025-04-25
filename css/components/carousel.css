@@ -1,0 +1,261 @@
+/* Estilos para a seção de lançamentos */
+.releases {
+  padding: 20px 0;
+  background-color: #f9f9f9;
+}
+
+.releases h2 {
+  text-align: left;
+  margin-bottom: 25px;
+  font-size: 1.8em;
+  color: #333;
+}
+
+.releases .carousel-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.releases .carousel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.releases .product-card {
+  width: 220px;
+  margin-right: 15px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  flex-shrink: 0;
+}
+
+.releases .product-card img {
+  max-height: 180px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 8px 8px 0 0;
+}
+
+.releases .product-info {
+  padding: 15px;
+  text-align: left;
+}
+
+.releases .product-name {
+  font-size: 1em;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #222;
+}
+
+.releases .product-description {
+  font-size: 0.85em;
+  color: #555;
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+.releases .price {
+  margin-bottom: 12px;
+}
+
+.releases .old-price {
+  color: #777;
+  text-decoration: line-through;
+  font-size: 0.9em;
+  margin-right: 5px;
+}
+
+.releases .current-price {
+  color: #00a000;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.releases .installments {
+  color: #333;
+  font-size: 0.75em;
+}
+
+.releases .buy-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 0.9em;
+  width: 100%;
+}
+
+.releases .carousel-control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2.5em;
+  color: #555;
+  opacity: 0.5;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.releases .carousel-control:hover {
+  opacity: 0.8;
+}
+
+.releases .prev-button {
+  left: -10px;
+}
+
+.releases .next-button {
+  right: -10px;
+}
+
+.releases .carousel-indicators {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.releases .carousel-indicators button {
+  width: 12px;
+  height: 12px;
+  background-color: #ccc;
+  border-radius: 50%;
+  border: none;
+  margin: 0 8px;
+  cursor: pointer;
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+}
+
+.releases .carousel-indicators button.active {
+  background-color: #333;
+  opacity: 1;
+}
+
+.releases .view-more-link {
+  margin-top: 25px;
+  font-size: 1em;
+  display: block;
+  text-align: center;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.releases .view-more-link:hover {
+  text-decoration: underline;
+}
+
+/* Responsividade Detalhada */
+@media (min-width: 1200px) {
+  .releases .product-card {
+    width: 250px;
+    margin-right: 20px;
+  }
+
+  .releases h2 {
+    font-size: 2em;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .releases .product-card {
+    width: 200px;
+    margin-right: 12px;
+  }
+
+  .releases h2 {
+    font-size: 1.6em;
+  }
+}
+
+@media (max-width: 768px) {
+  .releases .product-card {
+    width: 180px;
+  }
+
+  .releases .carousel-control {
+    font-size: 2em;
+  }
+
+  .releases .prev-button {
+    left: 0;
+  }
+
+  .releases .next-button {
+    right: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .releases .product-card {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+
+  .releases h2 {
+    font-size: 1.4em;
+  }
+
+  .releases .product-info {
+    padding: 10px;
+  }
+
+  .releases .buy-button {
+    padding: 8px 12px;
+    font-size: 0.85em;
+  }
+
+  .releases .carousel-control {
+    font-size: 1.8em;
+  }
+}
+
+@media (max-width: 320px) {
+  .releases h2 {
+    font-size: 1.3em;
+  }
+
+  .releases .product-name {
+    font-size: 0.9em;
+  }
+
+  .releases .product-description {
+    font-size: 0.8em;
+  }
+
+  .releases .current-price {
+    font-size: 1em;
+  }
+}
+
+/* Animações */
+.releases .product-card {
+  transition: transform 0.3s ease-in-out;
+}
+
+.releases .product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.releases .buy-button {
+  transition: background-color 0.3s ease;
+}
+
+.releases .buy-button:hover {
+  background-color: #0056b3;
+}
+
+.releases .carousel-control {
+  transition: transform 0.3s ease-in-out;
+}
+
+.releases .carousel-control:hover {
+  transform: translateY(-50%) scale(1.1);
+}

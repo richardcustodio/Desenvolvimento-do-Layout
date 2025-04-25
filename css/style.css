@@ -1,0 +1,539 @@
+/* Import dos estilos dos componentes */
+@import url("./components/header.css");
+@import url("./components/navbar.css");
+@import url("./components/carousel.css");
+@import url("./components/product-card.css");
+@import url("./components/featured-item.css");
+@import url("./components/info-blocks.css");
+@import url("./components/newsletter.css");
+@import url("./components/footer.css");
+@import url("./components/featured-collections.css");
+@import url("./components/customer-reviews.css");
+@import url("./components/faq.css");
+
+/* Estilos Globais */
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+h2 {
+  color: #222;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Estilos do Header */
+.main-header {
+  background-color: #fff;
+  padding: 20px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.main-header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo a {
+  display: block;
+}
+
+.logo img {
+  max-height: 50px;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+}
+
+.search-bar input[type="text"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+  width: 300px;
+}
+
+.search-bar button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+.search-bar button img {
+  max-height: 20px;
+}
+
+.search-bar #search-results {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-top: none;
+  width: 300px;
+  padding: 10px;
+  display: none; /* Inicialmente escondido */
+}
+
+.user-actions {
+  display: flex;
+  align-items: center;
+}
+
+.user-actions a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #333;
+  display: flex;
+  align-items: center;
+}
+
+.user-actions img {
+  max-height: 20px;
+  margin-right: 5px;
+}
+
+.cart-link span {
+  background-color: #ff0000;
+  color: #fff;
+  border-radius: 50%;
+  padding: 5px 8px;
+  font-size: 0.8em;
+  margin-left: 5px;
+}
+
+/* Estilos da Navegação */
+.main-navigation {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+}
+
+.main-navigation .container .menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: flex-start;
+  overflow-x: auto; /* Para menus longos em telas menores */
+}
+
+.main-navigation .container .menu li a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 15px;
+}
+
+.main-navigation .container .menu li a.all-categories {
+  font-weight: bold;
+}
+
+/* Estilos do Banner Principal */
+.hero-banner {
+  padding: 20px 0;
+}
+
+.hero-banner img {
+  display: block;
+  width: 100%;
+  max-height: 400px; /* Ajuste conforme necessário */
+  object-fit: cover;
+}
+
+/* Estilos da Seção de Lançamentos */
+.releases {
+  padding: 40px 0;
+  background-color: #fff;
+}
+
+.releases .carousel-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.releases .carousel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.releases .product-card {
+  flex: 0 0 auto;
+  width: 250px; /* Ajuste conforme o layout do Figma */
+  margin-right: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.releases .product-card img {
+  width: 100%;
+  display: block;
+  max-height: 200px; /* Ajuste conforme o layout */
+  object-fit: cover;
+}
+
+.releases .product-info {
+  padding: 15px;
+  text-align: center;
+}
+
+.releases .product-name {
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+.releases .product-description {
+  font-size: 0.9em;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.releases .price {
+  margin-bottom: 10px;
+}
+
+.releases .old-price {
+  color: #777;
+  text-decoration: line-through;
+  margin-right: 5px;
+}
+
+.releases .current-price {
+  color: #00a000;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.releases .installments {
+  color: #333;
+  font-size: 0.8em;
+}
+
+.releases .buy-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.releases .carousel-control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  font-size: 2em;
+  color: #333;
+  cursor: pointer;
+  padding: 10px;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+
+.releases .carousel-control:hover {
+  opacity: 1;
+}
+
+.releases .prev-button {
+  left: 10px;
+}
+
+.releases .next-button {
+  right: 10px;
+}
+
+.releases .carousel-indicators {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.releases .carousel-indicators button {
+  background-color: #ccc;
+  border: none;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+
+.releases .carousel-indicators button.active {
+  background-color: #333;
+  opacity: 1;
+}
+
+.releases .view-more-link {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Estilos da Seção de Destaque */
+.featured-item {
+  padding: 40px 0;
+  background-color: #f9f9f9;
+}
+
+.featured-item .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.featured-item .featured-image {
+  flex: 0 0 45%;
+}
+
+.featured-item .featured-image img {
+  display: block;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.featured-item .featured-content {
+  flex: 0 0 50%;
+}
+
+.featured-item .featured-content h2 {
+  text-align: left;
+  margin-top: 0;
+}
+
+/* Estilos da Seção de Blocos de Informação */
+.info-blocks {
+  padding: 40px 0;
+  background-color: #fff;
+}
+
+.info-blocks .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.info-blocks .info-block {
+  flex: 0 0 calc(30% - 20px); /* Aproximadamente 3 blocos por linha */
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.info-blocks .info-block img {
+  max-height: 50px;
+  margin-bottom: 10px;
+}
+
+.info-blocks .info-block h3 {
+  font-size: 1.2em;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.info-blocks .info-block.featured-image-info {
+  flex-basis: 100%;
+  text-align: center;
+}
+
+.info-blocks .info-block.featured-image-info img {
+  max-width: 80%;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+/* Estilos da Seção de Newsletter */
+.newsletter-section {
+  padding: 40px 0;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+.newsletter-section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.newsletter-section .newsletter-form {
+  display: flex;
+  justify-content: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.newsletter-section .newsletter-form input[type="text"],
+.newsletter-section .newsletter-form input[type="email"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+  flex-grow: 1;
+  margin-right: 5px;
+}
+
+.newsletter-section .newsletter-form button {
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Estilos do Footer */
+.main-footer {
+  background-color: #333;
+  color: #fff;
+  padding: 40px 0;
+  font-size: 0.9em;
+}
+
+.main-footer .container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.main-footer .footer-links > div {
+  flex: 1 1 200px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.main-footer h3 {
+  color: #fff;
+  margin-top: 0;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #555;
+  padding-bottom: 5px;
+}
+
+.main-footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.main-footer ul li a {
+  color: #ccc;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.main-footer .contact-us .social-links {
+  margin-top: 10px;
+}
+
+.main-footer .contact-us .social-links a {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.main-footer .contact-us .social-links img {
+  max-height: 25px;
+}
+
+.main-footer .payment-methods {
+  text-align: center;
+  margin-bottom: 20px;
+  flex-basis: 100%;
+}
+
+.main-footer .payment-methods img {
+  max-height: 30px;
+  margin: 0 10px;
+}
+
+.main-footer .copyright {
+  text-align: center;
+  flex-basis: 100%;
+  margin-top: 20px;
+  font-size: 0.8em;
+  color: #777;
+}
+
+/* Exemplo de Media Query para telas menores que 768px (tablets e celulares) */
+@media (max-width: 768px) {
+  .main-header .container {
+    flex-direction: column; /* Empilha os elementos do header */
+    align-items: flex-start;
+  }
+
+  .logo {
+    margin-bottom: 10px;
+  }
+
+  .search-bar {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .search-bar input[type="text"] {
+    width: calc(100% - 45px); /* Ajusta a largura do input */
+  }
+
+  .user-actions {
+    margin-top: 10px;
+    margin-left: 0;
+  }
+
+  .user-actions a {
+    margin-left: 10px;
+  }
+
+  .info-blocks .info-block {
+    flex-basis: calc(50% - 20px); /* Dois blocos por linha em telas menores */
+  }
+
+  .info-blocks .info-block.featured-image-info {
+    flex-basis: 100%; /* O bloco de imagem ocupa a largura total */
+  }
+}
+
+/* Outro exemplo para telas ainda menores (celulares) */
+@media (max-width: 480px) {
+  .info-blocks .info-block {
+    flex-basis: 100%; /* Um bloco por linha em celulares */
+  }
+
+  .main-navigation .container .menu {
+    justify-content: space-between; /* Distribui os itens do menu */
+  }
+
+  .main-navigation .container .menu li.desktop-only {
+    display: none; /* Esconde itens específicos em telas muito pequenas */
+  }
+
+  .main-navigation .container .menu li.mobile-only {
+    display: block; /* Mostra itens específicos para mobile */
+  }
+}

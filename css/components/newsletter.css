@@ -1,0 +1,154 @@
+/* Estilos para a seção de newsletter */
+.newsletter-section {
+  background-color: #f8f9fa;
+  padding: 60px 0;
+  text-align: center;
+}
+
+.newsletter-section .container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.newsletter-section .newsletter-content {
+  margin-bottom: 30px;
+}
+
+.newsletter-section h2 {
+  color: #343a40;
+  margin-bottom: 20px;
+  font-size: 2em;
+}
+
+.newsletter-section .newsletter-benefit {
+  color: #6c757d;
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.newsletter-section .newsletter-benefit i {
+  margin-right: 10px;
+  color: #007bff;
+  font-size: 1.2em;
+}
+
+.newsletter-section .newsletter-form {
+  display: flex;
+  gap: 10px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.newsletter-section .newsletter-form input[type="text"],
+.newsletter-section .newsletter-form input[type="email"] {
+  padding: 12px 15px;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  flex-grow: 1;
+  font-size: 1em;
+  color: #495057;
+  transition: border-color 0.3s ease;
+}
+
+.newsletter-section .newsletter-form input::placeholder {
+  color: #6c757d;
+  opacity: 1;
+}
+
+.newsletter-section .newsletter-form button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  display: flex;
+  align-items: center;
+}
+
+.newsletter-section .newsletter-form button i {
+  margin-right: 8px;
+  font-size: 1.2em;
+}
+
+.newsletter-section .newsletter-form button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.newsletter-section .newsletter-privacy {
+  color: #6c757d;
+  font-size: 0.85em;
+  margin-top: 15px;
+}
+
+.newsletter-section .newsletter-privacy a {
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.newsletter-section .newsletter-privacy a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+/* Estilos para telas menores */
+@media (max-width: 600px) {
+  .newsletter-section h2 {
+    font-size: 1.7em;
+    margin-bottom: 15px;
+  }
+
+  .newsletter-section .newsletter-benefit {
+    font-size: 1em;
+    margin-bottom: 8px;
+  }
+
+  .newsletter-section .newsletter-form {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .newsletter-section .newsletter-form input[type="text"],
+  .newsletter-section .newsletter-form input[type="email"],
+  .newsletter-section .newsletter-form button {
+    width: 100%;
+    padding: 10px 12px;
+    font-size: 0.95em;
+  }
+
+  .newsletter-section .newsletter-form button i {
+    margin-right: 5px;
+  }
+}
+
+/* Animações */
+.newsletter-section .newsletter-form input[type="text"],
+.newsletter-section .newsletter-form input[type="email"] {
+  transition: border-color 0.3s ease;
+}
+
+.newsletter-section .newsletter-form button {
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.newsletter-section .newsletter-form button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.newsletter-section .newsletter-privacy a {
+  transition: color 0.3s ease;
+}
+
+.newsletter-section .newsletter-privacy a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}

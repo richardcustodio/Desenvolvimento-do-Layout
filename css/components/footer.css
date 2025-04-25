@@ -1,0 +1,444 @@
+/* Estilos para o footer */
+.main-footer {
+  background-color: #f8f9fa;
+  padding: 40px 0;
+  color: #555;
+  font-size: 0.9em;
+}
+
+.main-footer .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.main-footer .footer-links {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.main-footer .footer-logo-social {
+  text-align: left;
+  margin-bottom: 15px;
+  margin-right: 20px;
+}
+
+.main-footer .footer-logo-social h3 {
+  margin-top: 0;
+  color: #fff;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.main-footer .social-links {
+  display: flex;
+  gap: 10px;
+}
+
+.main-footer .social-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #ddd;
+  color: #333;
+  text-decoration: none;
+  font-size: 1em;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.main-footer .social-icon i {
+  font-size: 1.2em;
+}
+
+.main-footer .social-icon:hover {
+  background-color: #007bff;
+  color: #fff;
+  transform: scale(1.1);
+}
+
+.main-footer h4 {
+  color: #fff;
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 1.1em;
+}
+
+.main-footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.main-footer ul li {
+  margin-bottom: 8px;
+}
+
+.main-footer ul li a {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  display: block;
+}
+
+.main-footer ul li a:hover {
+  color: #007bff;
+}
+
+.main-footer .atendimento p {
+  line-height: 1.6;
+  margin-bottom: 8px;
+}
+
+.main-footer .payment-methods {
+  text-align: center;
+  margin: 20px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.payment-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.payment-icon:hover {
+  transform: translateY(-5px);
+}
+
+.payment-icon img {
+  height: 100px;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+  margin-bottom: 5px;
+}
+
+.payment-icon img:hover {
+  opacity: 1;
+}
+
+.payment-icon a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.payment-icon a:hover {
+  color: #007bff;
+}
+
+.payment-icons-credits {
+  font-size: 1em;
+  color: #fff;
+  margin-top: 10px;
+  text-align: center;
+  padding-bottom: 10px;
+  width: 100%;
+}
+
+payment-icons-credits a {
+  color: #777;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+payment-icons-credits a:hover {
+  color: #007bff;
+}
+
+.main-footer .footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid #eee;
+}
+
+.main-footer .footer-text {
+  color: #fff;
+  line-height: 1.6;
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+.main-footer .security-logos {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.main-footer .security-logos img {
+  height: 25px;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+
+.main-footer .security-logos img:hover {
+  opacity: 1;
+}
+
+.main-footer .copyright {
+  color: #777;
+  font-size: 0.85em;
+  margin-top: 10px;
+}
+
+.security-logos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 30px;
+  text-align: center;
+  width: 100%;
+}
+
+.security-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 10px; /* Adiciona espaço entre os ícones e a atribuição */
+  flex-wrap: wrap; /* Permite que os ícones quebrem para a próxima linha em telas menores */
+}
+
+.security-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.security-icon img {
+  height: 40px; /* Ajustei o tamanho para ser mais parecido com os de pagamento */
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+  margin-bottom: 5px;
+}
+
+.security-icon img:hover {
+  opacity: 1;
+}
+
+.security-icon a,
+.security-icon span {
+  font-size: 0.8em;
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.security-icon a:hover {
+  color: #007bff;
+}
+
+.security-logos .icons-credits {
+  font-size: 0.8em;
+  color: #fff;
+  margin-top: 10px;
+}
+
+.security-logos .icons-credits a {
+  color: #777;
+  text-decoration: none;
+}
+
+.security-logos .icons-credits a:hover {
+  color: #007bff;
+  text-decoration: underline;
+}
+
+/* ... (seu CSS de responsividade) ... */
+/* Responsividade Detalhada */
+@media (min-width: 1200px) {
+  .main-footer {
+    padding: 60px 0;
+  }
+
+  .main-footer .footer-links {
+    justify-content: space-around;
+    gap: 30px;
+  }
+
+  .main-footer .footer-logo-social h3 {
+    font-size: 1.8em;
+  }
+
+  .main-footer h4 {
+    font-size: 1.2em;
+  }
+
+  .main-footer ul li a {
+    font-size: 1em;
+  }
+
+  .main-footer .atendimento p {
+    font-size: 1em;
+  }
+
+  .payment-icon img {
+    height: 120px;
+  }
+
+  .payment-icons-credits {
+    font-size: 1.1em;
+  }
+
+  .main-footer .footer-text {
+    font-size: 1em;
+  }
+
+  .main-footer .security-logos img {
+    height: 30px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .main-footer .footer-links {
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 20px;
+  }
+
+  .main-footer .footer-links > div {
+    flex-basis: 45%;
+  }
+
+  .main-footer .footer-logo-social {
+    margin-right: 0;
+  }
+
+  .main-footer .payment-methods {
+    gap: 15px;
+  }
+
+  .payment-icon img {
+    height: 80px;
+  }
+
+  .main-footer .footer-text {
+    font-size: 0.95em;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-header .container {
+    flex-direction: row; /* Alinha os itens horizontalmente */
+    align-items: center; /* Alinha verticalmente ao centro */
+    justify-content: space-between; /* Espaço entre os elementos principais */
+    padding: 10px 15px; /* Ajusta o padding lateral */
+  }
+
+  .logo {
+    margin-bottom: 0; /* Remove a margem inferior */
+  }
+
+  .logo img {
+    max-height: 50px; /* Reduz ainda mais o tamanho da logo */
+  }
+
+  .search-bar {
+    width: auto; /* Largura automática para ocupar o espaço necessário */
+    margin-bottom: 0; /* Remove a margem inferior */
+    flex-grow: 1; /* Permite que a barra de pesquisa cresça para ocupar o espaço */
+    margin-left: 15px; /* Adiciona um espaço à esquerda da barra de pesquisa */
+  }
+
+  .search-bar input[type="text"] {
+    width: calc(100% - 40px); /* Ajusta a largura do input */
+    font-size: 0.85em;
+    padding: 8px;
+  }
+
+  .search-bar button {
+    padding: 8px 10px;
+  }
+
+  .user-actions {
+    width: auto; /* Largura automática */
+    justify-content: flex-end; /* Alinha os ícones à direita */
+    margin-bottom: 0; /* Remove a margem inferior */
+    margin-left: 15px; /* Adiciona um espaço à esquerda das ações do usuário */
+  }
+
+  .user-actions a {
+    margin: 0 5px;
+    font-size: 0.8em;
+  }
+
+  .cart-link {
+    margin-left: 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo img {
+    max-height: 40px; /* Reduz ainda mais a logo em telas muito pequenas */
+  }
+
+  .search-bar input[type="text"] {
+    font-size: 0.75em;
+  }
+
+  .user-actions a {
+    font-size: 0.7em;
+  }
+
+  .cart-link i {
+    font-size: 1em;
+  }
+
+  .cart-link span {
+    font-size: 0.55em;
+    padding: 2px 4px;
+  }
+}
+
+/* Animações */
+.main-footer .social-icon {
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.main-footer .social-icon:hover {
+  transform: scale(1.1);
+}
+
+.payment-icon {
+  transition: transform 0.3s ease;
+}
+
+.payment-icon:hover {
+  transform: translateY(-5px);
+}
+
+.payment-icon img {
+  transition: opacity 0.3s ease;
+}
+
+.payment-icon img:hover {
+  opacity: 1;
+}
+
+payment-icons-credits a {
+  transition: color 0.3s ease;
+}
+
+payment-icons-credits a:hover {
+  color: #007bff;
+}
+
+.main-footer .security-logos img {
+  transition: opacity 0.3s ease;
+}
+
+.main-footer .security-logos img:hover {
+  opacity: 1;
+}
